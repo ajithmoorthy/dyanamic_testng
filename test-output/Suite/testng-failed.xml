@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.atmecs.complexautomation.testscripts.TestVerifyRedbus">
+        <methods>
+          <include name="baseSetup"/>
+          <include name="endReport"/>
+          <include name="verifyRedbus"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.atmecs.complexautomation.testscripts.TestVerifyRedbus -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.atmecs.complexautomation.testscripts.TestVerifyYatra">
+        <methods>
+          <include name="baseSetup"/>
+          <include name="verifyYatra"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.atmecs.complexautomation.testscripts.TestVerifyYatra -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
